@@ -25,11 +25,12 @@ LSTM — compared on a **2-year (104-week) hold-out horizon**.
 - **Weekly load:** mean 55,484.35 MW (σ = 3,762.74 MW), ranging from 46,505.31 MW (summer troughs) to 63,587.01 MW (winter peaks).
 - **Exogenous data:** Berlin 2 m temperature from the [Open-Meteo archive API](https://archive-api.open-meteo.com/v1/archive) (fetched live — needs internet) and German public holidays via the `holidays` package (offline, no internet needed).
 
-> **Reproducibility:** the notebook loads `opsd_60min_raw.csv` **directly from the same folder as the
-> notebook** — it does not download or cache anything automatically. Make sure that file sits next to
-> `Sony_Final_Code.ipynb` before you run it (it's already included in this repo; re-download it from
-> the OPSD link above only if you need a fresh copy). The Open-Meteo temperature call still requires
-> internet on first run.
+> **Reproducibility:** the notebook looks for `opsd_60min_raw.csv` in the same folder as
+> `Sony_Final_Code.ipynb`. If it isn't there, the first cell downloads it directly from the OPSD link
+> above and saves a local copy automatically — the dataset itself is **not** committed to this repo
+> (it's a large file, well over GitHub's 100MB per-file limit), so the auto-download is what makes the
+> notebook runnable out of the box. First run needs internet for this download and for the Open-Meteo
+> temperature call later on.
 
 ---
 
