@@ -106,7 +106,7 @@ jupyter notebook Sony_Final_Code.ipynb
 ```
 
 **Prerequisites**
-- **`opsd_60min_raw.csv` must be in the same folder as the notebook** — it's already included in this repo; grab a fresh copy from the OPSD link in [Data](#1-data) if you need one.
+- **`opsd_60min_raw.csv` must be in the same folder as the notebook** — if not it can fetch from the OPSD.
 - **Internet enabled** on first run for the Open-Meteo temperature API call.
 - **GPU optional** — speeds up the LSTM stage, but it's only 10 epochs with early stopping, so CPU works fine too.
 
