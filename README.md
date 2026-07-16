@@ -11,7 +11,6 @@ LSTM — compared on a **2-year (104-week) hold-out horizon**.
 | File | Description |
 |------|-------------|
 | [`Sony_Final_Code.ipynb`](Sony_Final_Code.ipynb) | Full analysis notebook (EDA → benchmarks → SARIMA/SARIMAX → RF → LSTM → Parts 1–7 write-up). |
-| `opsd_60min_raw.csv` | Local copy of the OPSD 60-minute Germany load file the notebook reads directly (see [Data](#1-data) for the original source, in case you'd rather fetch it yourself). |
 | `requirements.txt` | Pinned Python dependencies. |
 | `README.md` | This file. |
 
